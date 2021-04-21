@@ -1,0 +1,40 @@
+.widget{
+          border-left: 1px solid lightgray;
+          flex: 0.35;
+          overflow-y: scroll;
+          padding: 0px 10px;
+          margin-right: 40px;
+}
+
+.widget::-webkit-scrollbar{
+         display: none;
+}
+
+.widget__input{
+          padding: 15px 50px;
+}
+
+.widget__inputArea{
+          border-radius: 999px;
+          display: flex;
+          align-items: center;
+          padding: 5px 10px;
+          background: #e1e8edad;
+}
+
+.widget__inputArea input{
+          background: #e1e8ed00;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 12px;
+          padding: 5px;
+}
+
+.widget__widgetFromNpm{
+          padding: 20px 20px;
+          background: #F5F8FA;
+          border-radius: 10px;
+}
+
+

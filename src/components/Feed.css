@@ -1,0 +1,149 @@
+.feed{
+          overflow-y: scroll;
+          min-width: fit-content;
+          min-width: 200px;
+          flex: 0.45;
+}
+
+   /* for chrome safari opera */
+.feed::-webkit-scrollbar{
+          display: none;
+          background: #00b9ff;
+}
+
+      /* for Ie edge firefox */
+
+.feed::-webkit-scrollbar{
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+}
+
+.feed__header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 14px 18px;
+          border: 1px solid lightgray;
+          border-left: none;
+          border-right: none;
+          position: sticky;
+          top: 0px;
+          z-index: 10;
+          background: white;
+}
+
+.feed__header p{
+          font-weight: bold;
+}
+
+.feed__headerStar .MuiSvgIcon-root{
+          color:#00b9ff ;
+}
+
+.feed__headerStarIcon{
+          padding: 2px;
+          border-radius: 999px;
+          transition: 0.5s ease;
+}
+
+.feed__headerStarIcon:hover{
+          background: #00abee13;
+          /* color: gray; */
+}
+
+/* feed input field */
+
+.feed__input{
+          padding: 10px 10px;
+          border-bottom: 1px solid lightgray;
+          max-height: 145.4px;
+}
+
+.feed__avathar_Input{
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid lightgray;
+          padding-bottom: 10px;
+}
+
+.feed__options{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+
+.feed__opt{
+          cursor: pointer;
+}
+
+.feed__connect{
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+}
+
+.feed__avathar_Input input:nth-child(2){
+      font-size: 12px;
+      border-radius: 6px;
+      padding-left: 10px;
+}
+
+.feed__connect input{
+          margin-left: 14px;
+          font-size: 16px;
+          border: none;
+          outline: none;
+          opacity: 0.8;
+          padding: 5px 5px;
+}
+
+.feed__connect p{
+          color:#00b9ff ;
+          font-size: 13px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          cursor: pointer;
+          margin-left: 10px;
+          border-radius: 25px;
+          padding: 2px;
+          object-fit: contain;
+}
+
+/* .feed__connect p:hover{
+          background: #00abee13;
+} */
+
+.feed__optionsButtons{
+          display: flex;
+          margin-left: 45px;
+          margin-right: auto;
+          margin-top: 20px;
+          color:#00b9ff ;
+          width: 100%;
+}
+
+.feed__icon{
+          padding: 4px;    
+}
+
+.feed__icon:hover{
+          background: #00abee13; 
+          border-radius: 80px;
+}
+
+.feed__tweetButton{
+          border: none;
+          background: #1da0f2e3;
+          color: white;
+          border-radius: 25px;
+          font-size: 11.2px;
+          font-weight: bold;
+          margin-top: 16px;
+          max-width: 60px;
+          min-height: 20px;
+          padding: 8px 15px;
+          cursor: pointer;
+          outline: none;
+}

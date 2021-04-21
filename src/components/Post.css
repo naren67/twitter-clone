@@ -1,0 +1,119 @@
+.post{
+          border-bottom: 1px solid lightgray;
+}
+
+.verified{
+          color:#00b9ff ;
+}
+
+.post__header{
+          display: flex;
+          padding: 10px 10px;
+}
+
+.post__right{
+          display: flex;
+          cursor: pointer;
+}
+
+.feed__imageSent{
+          object-fit: contain;
+}
+
+.feed__imageSent img{
+          border-radius: 15px;
+          width: 100%;
+          cursor: pointer;
+}
+
+.feed__left{
+          width: 480px;
+          padding: 5px;
+          border-radius: 15px;
+          margin-left: 8px;
+}
+
+.feed__displayName p{
+          font-size: 13px;
+          font-weight: bold;
+          cursor: pointer;
+}
+
+.post__footer{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2px 50px;
+          margin-top: 10px;
+}
+
+.post__icon1{
+          padding-top: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-radius: 999px;
+          cursor: pointer; 
+          opacity: 0.5;
+}
+
+.post__icon1:hover{
+          background: #00abee40;
+          color:#00b9ff ;
+}
+
+.post__icon2{
+          padding-top: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-radius: 999px;
+          cursor: pointer; 
+          opacity: 0.5;
+}
+
+.post__icon2:hover{
+          background: rgba(0, 255, 21, 0.238) ;
+          color: rgb(0, 255, 21) ;
+}
+
+
+.post__icon3{
+          padding-top: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-radius: 999px;
+          cursor: pointer; 
+          opacity: 0.5;
+}
+
+.post__icon3:hover{
+          background: rgba(255, 0, 0, 0.265);
+          color: red;
+}
+
+
+.post__icon4{
+          padding-top: 5px;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-radius: 999px;
+          cursor: pointer; 
+          opacity: 0.5;
+}
+
+.post__icon4:hover{
+          background: #00abee40;
+          color:#00b9ff ;
+}
+
+.userName{
+          opacity: 0.5;
+          font-weight: lighter;
+}
+
+.feed__text{
+          margin-bottom: 15px;
+}
+
+.feed__text p{
+          font-size: calc(14px + 0.01vw);
+}
