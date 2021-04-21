@@ -12,6 +12,7 @@ import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
 import Post from './Post';
 import db from '../firebase';
 import FlipMove from 'react-flip-move';
+import firebase from 'firebase'
 
 function Feed() {
 
@@ -24,10 +25,12 @@ function Feed() {
           // console.log(tweetImage)
 
           useEffect(()=>{
-              db.collection('posts').onSnapshot(snapshot=>(
+              db.collection('posts').orderBy('timestamp','desc').onSnapshot(snapshot=>(
                     setPosts(snapshot.docs.map(doc=> doc.data()))  
               ))       
           },[])
+
+          console.log(posts)
 
           //send tweet on pressing the button
           const sendTweet = (e)=>{
@@ -40,6 +43,7 @@ function Feed() {
                               text : tweetText,
                               image : tweetImage,
                               avatar : 'https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png',
+                              timestamp : firebase.firestore.FieldValue.serverTimestamp(),
                     })
 
                     setTweetText('')
@@ -98,12 +102,14 @@ function Feed() {
                                       {posts.map(post=>(
                                                   <Post
                                                   key={post.text}
+                                                  timestamp = {post.timestamp}
                                                   displayName = {post.displayName}
                                                   userName = {post.userName}
                                                   verified = {post.verified}
                                                   text = {post.text}
                                                   image = {post.image}
                                                   avatar = {post.avatar}
+                                                  timestamp = {post.timestamp}
                                                   />
                                       ))}
                                     </FlipMove>

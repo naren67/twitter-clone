@@ -6,9 +6,10 @@ import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRo
 import RepeatRoundedIcon from '@material-ui/icons/RepeatRounded';
 import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
 import ShareRoundedIcon from '@material-ui/icons/ShareRounded';
+import firebase from 'firebase'
 
 
-const Post = forwardRef(({displayName, userName, verified, text, image, avatar, comment, retweet, heart, share}, ref)=>{
+const Post = forwardRef(({displayName, userName, timestamp, verified, text, image, avatar, comment, retweet, heart, share}, ref)=>{
    return (
              <div className='post' ref={ref}>
                     <div className="post__header">
@@ -23,6 +24,9 @@ const Post = forwardRef(({displayName, userName, verified, text, image, avatar, 
                                  </div>
                                  <div className="feed__text">
                                            <p>{text}</p>
+                                 </div>
+                                 <div className="post__time">
+                                    <p>{new Date(timestamp ?.toDate()).toUTCString()}</p>
                                  </div>
                                  <div className="feed__imageSent">
                                            <img src={image} alt=""/>

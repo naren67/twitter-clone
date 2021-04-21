@@ -105,6 +105,10 @@
           color:#00b9ff ;
 }
 
+.post__time{
+          display: none;
+}
+
 .userName{
           opacity: 0.5;
           font-weight: lighter;
