@@ -20,7 +20,7 @@ const Post = forwardRef(({displayName, userName, timestamp, verified, text, imag
                        <div className="feed__left">
                                 <div className="post__imageSection">
                                 <div className="feed__displayName">
-                                           <p>{displayName} <span className='verified'>{verified && <CheckCircleOutlineIcon style={{ fontSize: 14 }}/>}</span> <span className='userName'>{userName}</span> </p>
+                                           <p>{displayName} <span className='verified'>{verified && <CheckCircleOutlineIcon style={{ fontSize: 14 }}/>}</span> <span className='userName'>@{userName}</span> </p>
                                  </div>
                                  <div className="feed__text">
                                            <p>{text}</p>
